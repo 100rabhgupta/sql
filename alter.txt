@@ -1,0 +1,19 @@
+create table testing_table (name varchar(20), contact_name varchar(20), roll_no varchar(3)) ;
+desc testing_table;
++--------------+-------------+------+-----+---------+-------+
+| Field        | Type        | Null | Key | Default | Extra |
++--------------+-------------+------+-----+---------+-------+
+| name         | varchar(20) | YES  |     | NULL    |       |
+| contact_name | varchar(20) | YES  |     | NULL    |       |
+| roll_no      | varchar(3)  | YES  |     | NULL    |       |
++--------------+-------------+------+-----+---------+-------+
+alter table testing_table add column first_name varchar(10), add column last_name varchar(10), modify column roll_no int(5), drop column name , change column contact_name user_name varchar(10) ;
+desc testing_table;
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| user_name  | varchar(10) | YES  |     | NULL    |       |
+| roll_no    | int(5)      | YES  |     | NULL    |       |
+| first_name | varchar(10) | YES  |     | NULL    |       |
+| last_name  | varchar(10) | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
